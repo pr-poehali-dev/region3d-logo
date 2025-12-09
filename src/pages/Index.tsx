@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import NewLogo from '@/components/NewLogo';
 
 const Index = () => {
   const [selectedLogo, setSelectedLogo] = useState(0);
@@ -11,6 +12,11 @@ const Index = () => {
   const logos = [
     {
       id: 0,
+      name: 'Минималистичный принтер',
+      svg: <NewLogo />
+    },
+    {
+      id: 1,
       name: 'Геометрическая голова',
       svg: (
         <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -23,7 +29,7 @@ const Index = () => {
       )
     },
     {
-      id: 1,
+      id: 2,
       name: 'Минимал принтер',
       svg: (
         <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -36,7 +42,7 @@ const Index = () => {
       )
     },
     {
-      id: 2,
+      id: 3,
       name: 'Экструдер куб',
       svg: (
         <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -51,7 +57,7 @@ const Index = () => {
       )
     },
     {
-      id: 3,
+      id: 4,
       name: 'Слои печати',
       svg: (
         <svg viewBox="0 0 200 200" className="w-full h-full">
